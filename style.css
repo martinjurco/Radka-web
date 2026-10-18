@@ -47,7 +47,16 @@ a{color:inherit;text-decoration:none}
 .hero .btn-wrap{margin-top:34px;padding-left:7px}
 .btn-hero{display:inline-block;background:var(--peach);color:var(--primary);font-size:25px;font-weight:500;padding:10px 30px;border-radius:45px;transition:background .3s,transform .3s}
 .btn-hero:hover{background:var(--text);transform:translateY(-2px)}
-.hero-mobile{display:none}
+.hero-mobile{display:none;background:var(--primary);color:var(--text);text-align:center}
+.hm-photo{position:relative}
+.hm-photo img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+.hm-photo::after{content:"";position:absolute;left:0;right:0;bottom:0;height:22%;background:linear-gradient(to bottom,rgba(0,61,46,0),var(--primary))}
+.hm-text{padding:10px 24px 50px;position:relative;margin-top:-10px}
+.hm-text h1{font-size:62px;font-weight:300;line-height:1.1}
+.hm-text h2{font-size:26px;font-weight:300;margin:10px 0 26px}
+.hm-text p{font-size:20px;font-weight:300;line-height:1.5}
+.hm-text p.strong{font-weight:600;margin-top:4px}
+.hm-text .btn-hero{font-size:20px;margin-top:30px}
 
 /* ===== O mně ===== */
 .about{background:var(--secondary);padding:70px 20px 280px}
@@ -217,13 +226,10 @@ a{color:inherit;text-decoration:none}
 /* Tablet na výšku: hero jako na mobilu */
 @media (max-width:1024px) and (orientation:portrait){
   .hero{display:none}
-  .hero-mobile{display:block;background:var(--primary);color:var(--text);text-align:center;padding:120px 30px 50px}
-  .hero-mobile h1{font-size:56px;font-weight:300;line-height:1.1}
-  .hero-mobile h2{font-size:28px;font-weight:300;margin:6px 0 24px}
-  .hero-mobile p{font-size:22px;font-weight:300;line-height:1.5}
-  .hero-mobile p+p{margin-top:14px}
-  .hero-mobile .btn-hero{margin:30px 0 36px}
-  .hero-mobile img{margin:0 auto;width:100%;max-width:600px}
+  .hero-mobile{display:block}
+  .hm-text h1{font-size:64px}
+  .hm-text h2{font-size:30px}
+  .hm-text p{font-size:24px}
 }
 
 /* ===== Mobil ===== */
@@ -236,13 +242,8 @@ a{color:inherit;text-decoration:none}
   .main-nav a{padding:12px 20px;text-align:center}
   .main-nav a::after{display:none}
   .hero{display:none}
-  .hero-mobile{display:block;background:var(--primary);color:var(--text);text-align:center;padding:110px 20px 40px;position:relative}
-  .hero-mobile h1{font-size:44px;font-weight:300;line-height:1.1}
-  .hero-mobile h2{font-size:24px;font-weight:300;margin:6px 0 24px}
-  .hero-mobile p{font-size:20px;font-weight:300;line-height:1.5}
-  .hero-mobile p+p{margin-top:14px}
-  .hero-mobile .btn-hero{font-size:20px;margin:28px 0 30px}
-  .hero-mobile img{margin:0 auto;width:100%;max-width:500px}
+  .hero-mobile{display:block}
+  .site-header .social{background:var(--primary);border-radius:40px;padding:4px 10px}
   .about{padding:50px 15px}
   .about-grid{grid-template-columns:1fr}
   .about-img,.about-text{grid-column:1;justify-self:center;text-align:center}
