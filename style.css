@@ -60,7 +60,7 @@ a{color:inherit;text-decoration:none}
 .hm-text .btn-hero{font-size:20px;margin-top:30px}
 
 /* ===== O mně ===== */
-.about{background:var(--secondary);padding:70px 20px 280px}
+.about{background:var(--secondary);padding:70px 20px 105px}
 .about-grid{max-width:var(--container);margin:0 auto;display:grid;grid-template-columns:228px 353px 80px 1fr;align-items:start}
 .about-img{grid-column:2;padding:10px}
 .about-img img{width:333px;height:500px;object-fit:cover}
@@ -72,7 +72,7 @@ a{color:inherit;text-decoration:none}
 /* ===== Služby ===== */
 .services{background:var(--primary);padding:0 20px 70px;color:var(--text)}
 .services-grid{max-width:var(--container);margin:0 auto;display:grid;grid-template-columns:365px 79px 1fr 70px;align-items:start}
-.poems{position:relative;background:var(--text);color:var(--primary);padding:87px 29px 50px 43px;margin-top:-210px;font-family:var(--playfair);font-style:italic}
+.poems{position:relative;z-index:2;background:var(--text);color:var(--primary);padding:87px 29px 50px 43px;margin-top:-210px;font-family:var(--playfair);font-style:italic}
 .poems .q{position:absolute;width:70px;height:46px}
 .poems .q-top{top:-20px;left:43px}
 .poems .q-bottom{bottom:-46px;right:50px;transform:rotate(180deg)}
