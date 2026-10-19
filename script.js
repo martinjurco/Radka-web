@@ -187,6 +187,22 @@
   /* --- Kontaktní formulář --- */
   const form = document.querySelector(".contact-form");
   if (form) {
+    // předvyplnění balíčku z odkazu ?balicek=...
+    const picked = new URLSearchParams(location.search).get("balicek");
+    const pkgSel = form.elements.balicek;
+    if (picked && pkgSel) {
+      if (![...pkgSel.options].some(o => o.value === picked || o.text === picked)) {
+        pkgSel.add(new Option(picked, picked));
+      }
+      pkgSel.value = picked;
+      const t = form.elements.message;
+      if (t && !t.value) t.value = `Dobrý den,\nmám zájem o: ${picked}.\n\nDatum akce: \nMísto: \n\n`;
+      const note = document.createElement("div");
+      note.className = "pkg-picked";
+      note.innerHTML = "Vybraný balíček: <b></b>";
+      note.querySelector("b").textContent = picked;
+      form.prepend(note);
+    }
     const msg = form.querySelector(".form-msg");
     const showErr = (field, text) => {
       field.classList.add("error");
@@ -222,7 +238,8 @@
         }
       } else {
         // Záloha bez serveru: otevře e-mailového klienta s předvyplněnou zprávou
-        const body = `Jméno: ${name.value}\nE-mail: ${email.value}\nTelefon: ${phone.value}\n\n${text.value}`;
+        const pkg = form.elements.balicek ? form.elements.balicek.value : "";
+        const body = `Jméno: ${name.value}\nE-mail: ${email.value}\nTelefon: ${phone.value}${pkg ? "\nBalíček: " + pkg : ""}\n\n${text.value}`;
         window.location.href = `mailto:kontakt@radkatesikova.cz?subject=${encodeURIComponent("Poptávka z webu – " + name.value)}&body=${encodeURIComponent(body)}`;
         msg.textContent = "Otevírám váš e-mailový program s připravenou zprávou.";
         msg.className = "form-msg ok";
