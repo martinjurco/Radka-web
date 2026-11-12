@@ -17,7 +17,13 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Inter:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<meta name="theme-color" content="#003D2E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -53,8 +59,8 @@
 <section class="hero" id="hero">
   <div class="hero-content">
     <div class="inner">
-      <h1>Radka Těšíková</h1>
-      <h2>- nabídka živé hudby -</h2>
+      <h1 class="hero-logo"><img src="rt-logo-negativ.svg" alt="Radka Těšíková" width="434" height="296"></h1>
+      <h2>– nabídka živé hudby –</h2>
       <p>Správný výběr hudby umocňuje<br>výjimečné momenty, svatby,<br>večeře i firemní akce.</p>
       <p>Jeden muzikant,<br>ale několik nástrojů.</p>
       <div class="btn-wrap"><a class="btn-hero" href="kontakt.html">Napište mi</a></div>
@@ -66,8 +72,8 @@
 <section class="hero-mobile">
   <div class="hm-photo"><img src="hero-mobil.webp" alt="violoncellistka Radka Těšíková" width="1020" height="1020"></div>
   <div class="hm-text">
-    <h1>Radka Těšíková</h1>
-    <h2>- nabídka živé hudby -</h2>
+    <h1 class="hero-logo"><img src="rt-logo-negativ.svg" alt="Radka Těšíková" width="434" height="296"></h1>
+    <h2>– nabídka živé hudby –</h2>
     <p>Správný výběr hudby umocňuje výjimečné momenty, svatby, večeře i firemní akce.</p>
     <p class="strong">Jeden muzikant, ale několik nástrojů.</p>
     <a class="btn-hero" href="kontakt.html">Napište mi</a>
@@ -91,9 +97,15 @@
 
 <!-- ===== Služby ===== -->
 <section class="services" id="services">
+  <svg class="strings-orn" viewBox="0 0 70 1000" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <path d="M52,0 C40,380 22,720 12,1000" stroke-width="1.6"/>
+    <path d="M52,0 C47,380 30,720 12,1000" stroke-width="1.1"/>
+    <path d="M52,0 C54,380 38,720 12,1000" stroke-width="1.1"/>
+    <path d="M52,0 C61,380 46,720 12,1000" stroke-width="1.6"/>
+  </svg>
   <div class="services-grid">
     <aside class="poems reveal">
-      <img class="q q-top" src="https://radkatesikova.cz/wp-content/uploads/2025/07/uvozovky.png" alt="">
+      <span class="q q-top" aria-hidden="true">„</span>
       <div class="poem">
         <h2>Patříme si</h2>
         <p>Já horám a hory mým nohám,<br>když vzdaluji se známým vodám.<br>Já cellu a cello tělu mému,<br>když nemohu se blížit tomu tvému.</p>
@@ -106,7 +118,7 @@
         <p>Na hraně život žije se<br>Na hraně každý chvěje se<br>V minulost útěk, v budoucnost plán<br>Jen na hraně je každý sám</p>
         <p class="end">… sebou</p>
       </div>
-      <img class="q q-bottom" src="https://radkatesikova.cz/wp-content/uploads/2025/07/uvozovky.png" alt="">
+      <span class="q q-bottom" aria-hidden="true">“</span>
     </aside>
 
     <div class="offer-intro reveal">
@@ -136,7 +148,7 @@
           <span class="pkg-badge">Obřad</span>
           <h4>Piano obřad</h4>
           <p class="pkg-desc">Klavírní doprovod celého svatebního obřadu.</p>
-          <div class="pkg-price"><span class="amount">4 200 Kč</span></div>
+          <div class="pkg-price"><span class="amount">4&nbsp;200&nbsp;Kč</span></div>
           <ul><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>hraní před obřadem</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>hudba během obřadu</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>hraní ke gratulacím</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>výběr skladeb na míru</li></ul>
           <a class="pkg-btn" href="kontakt.html?balicek=Piano%20ob%C5%99ad%20%284%20200%20K%C4%8D%29">Chci tento balíček</a>
         </article>
@@ -144,7 +156,7 @@
           <span class="pkg-badge">Obřad</span>
           <h4>Cello &amp; piano obřad</h4>
           <p class="pkg-desc">Klavír a violoncello v podání jedné muzikantky.</p>
-          <div class="pkg-price"><span class="amount">5 400 Kč</span></div>
+          <div class="pkg-price"><span class="amount">5&nbsp;400&nbsp;Kč</span></div>
           <ul><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>hraní před obřadem</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>hudba během obřadu</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>hraní ke gratulacím</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>výběr skladeb na míru</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>střídání piana a cella</li></ul>
           <a class="pkg-btn" href="kontakt.html?balicek=Cello%20%26%20piano%20ob%C5%99ad%20%285%20400%20K%C4%8D%29">Chci tento balíček</a>
         </article>
@@ -152,7 +164,7 @@
           <span class="pkg-badge">Balíček</span>
           <h4>Svatební balíček piano</h4>
           <p class="pkg-desc">Klavír k obřadu i k dalšímu programu svatebního dne.</p>
-          <div class="pkg-price"><span class="from">od</span><span class="amount">6 900 Kč</span></div>
+          <div class="pkg-price"><span class="from">od</span><span class="amount">6&nbsp;900&nbsp;Kč</span></div>
           <ul><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>hraní před obřadem</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>hudba během obřadu</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>hraní ke gratulacím</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>výběr skladeb na míru</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>hudba k obědu, kávě či prvnímu tanci</li></ul>
           <a class="pkg-btn" href="kontakt.html?balicek=Svatebn%C3%AD%20bal%C3%AD%C4%8Dek%20piano%20%28od%206%20900%20K%C4%8D%29">Chci tento balíček</a>
         </article>
@@ -160,7 +172,7 @@
           <span class="pkg-badge">Balíček</span>
           <h4>Svatební balíček cello &amp; piano</h4>
           <p class="pkg-desc">Klavír a violoncello k obřadu i k dalšímu programu svatebního dne.</p>
-          <div class="pkg-price"><span class="from">od</span><span class="amount">7 900 Kč</span></div>
+          <div class="pkg-price"><span class="from">od</span><span class="amount">7&nbsp;900&nbsp;Kč</span></div>
           <ul><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>hraní před obřadem</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>hudba během obřadu</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>hraní ke gratulacím</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>výběr skladeb na míru</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>střídání piana a cella</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>hudba k obědu, kávě či prvnímu tanci</li></ul>
           <a class="pkg-btn" href="kontakt.html?balicek=Svatebn%C3%AD%20bal%C3%AD%C4%8Dek%20cello%20%26%20piano%20%28od%207%20900%20K%C4%8D%29">Chci tento balíček</a>
         </article>
@@ -188,14 +200,14 @@
           <span class="pkg-badge">Pro začátečníky i pokročilé</span>
           <h4>Výukové lekce</h4>
           <p class="pkg-desc">Pomohu ti se základy hudební teorie nebo hrou na piano.</p>
-          <div class="pkg-price"><span class="amount">500 Kč</span><span class="unit">/ 45 minut</span></div>
+          <div class="pkg-price"><span class="amount">500&nbsp;Kč</span><span class="unit">/&nbsp;45&nbsp;minut</span></div>
           <ul><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>hra na piano</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>základy hudební teorie</li><li><svg class="ck" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>tempo podle tebe</li></ul>
           <a class="pkg-btn" href="kontakt.html?balicek=V%C3%BDukov%C3%A1%20lekce">Domluvit lekci</a>
         </article>
       </div>
     </div>
 
-    <p class="travel-note reveal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Cestovní náklady <b>6 Kč/km</b>, počítáno z Olomouce.</p>
+    <p class="travel-note reveal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>Cestovní náklady <b>6&nbsp;Kč/km</b>, počítáno z Olomouce.</p>
 
     <div class="custom-cta reveal">
       <div>
@@ -251,55 +263,55 @@
         <div class="carousel-slide"><div class="review">
           <img class="avatar" src="https://radkatesikova.cz/wp-content/uploads/2025/07/recenze_1-1.webp" alt="Helena a Filip" loading="lazy">
           <div class="review-card">
-            <img class="q q-top" src="https://radkatesikova.cz/wp-content/uploads/2025/07/uvozovky-hnede.png" alt="">
+            <span class="q q-top" aria-hidden="true">„</span>
             <p>Moc děkujeme za krásné hudební doprovázení našeho svatebního obřadu. Komunikace byla od začátku skvělá – vše probíhalo hladce, s respektem k našim přáním. Radka se naučila písně, které jsme si vybrali, a její provedení bylo dojemné a profesionální. Dorazila perfektně připravená a reprezentativně oblečená, vše měla skvěle zorganizované a pokud bylo potřeba cokoliv zkoordinovat, vždy jsme to věděli včas. Nemuseli jsme se o nic starat, a to je v den svatby k nezaplacení. Byli jsme opravdu moc spokojení a s čistým svědomím doporučujeme dál.</p>
             <p class="name">Helena a Filip</p>
-            <img class="q q-bottom" src="https://radkatesikova.cz/wp-content/uploads/2025/07/uvozovky-hnede.png" alt="">
+            <span class="q q-bottom" aria-hidden="true">“</span>
           </div>
         </div></div>
 
         <div class="carousel-slide"><div class="review">
           <img class="avatar" src="https://radkatesikova.cz/wp-content/uploads/2025/08/logo_pll_1_oprva.webp" alt="Priessnitzovy léčebné lázně" loading="lazy">
           <div class="review-card">
-            <img class="q q-top" src="https://radkatesikova.cz/wp-content/uploads/2025/07/uvozovky-hnede.png" alt="">
+            <span class="q q-top" aria-hidden="true">„</span>
             <p>Vaše koncerty jsou vždy pohlazením po duši a milou vzpruhou pro všechny přítomné. Není to jen tím, jakou hudbu prezentujete, ale také Vašim projevem. Přidáváte do koncertů tzv. přidanou hodnotu v podobě svých komentářů, textů, básní a nebo jen obyčejných reakcí na aktuální životní situace. Jeden klient mi do ucha (při pohledu na Vás) pošeptal: „víly existují“ 🙂</p>
             <p>Vždy Vás v lázních rádi uvítáme ať už budete vystupovat sama nebo s kolegou.</p>
             <p>Rozdávejte dále svou energii – podle všeho ji máte dost a dost 🙂</p>
             <p class="name">Věra Regnerová, kultura<br>Priessnitzovy léčebné lázně a.s.</p>
-            <img class="q q-bottom" src="https://radkatesikova.cz/wp-content/uploads/2025/07/uvozovky-hnede.png" alt="">
+            <span class="q q-bottom" aria-hidden="true">“</span>
           </div>
         </div></div>
 
         <div class="carousel-slide"><div class="review">
           <img class="avatar" src="https://radkatesikova.cz/wp-content/uploads/2025/08/recenze_2_orez.webp" alt="Hanka a Jenda" loading="lazy">
           <div class="review-card">
-            <img class="q q-top" src="https://radkatesikova.cz/wp-content/uploads/2025/07/uvozovky-hnede.png" alt="">
+            <span class="q q-top" aria-hidden="true">„</span>
             <p>Ráďu jsme poprosili o realizaci hudby k našemu svatebnímu obřadu a nemohli jsme vybrat líp. Sama si zorganizovala další šikovné muzikanty a zpěváky, poradila i s výběrem vhodných písní. Hudební těleso bylo nepočetné, takže respektovalo komornost našeho obřadu (dvacet lidí všeho všudy), na kvalitě výkonu se to však nepodepsalo, spíš naopak. V den D hudba krásně podkreslila obřad, tetičky se dojaly a my si užili neopakovatelnou atmosféru.</p>
             <p class="name">Hanka a Jenda</p>
-            <img class="q q-bottom" src="https://radkatesikova.cz/wp-content/uploads/2025/07/uvozovky-hnede.png" alt="">
+            <span class="q q-bottom" aria-hidden="true">“</span>
           </div>
         </div></div>
 
         <div class="carousel-slide"><div class="review">
           <img class="avatar" src="https://radkatesikova.cz/wp-content/uploads/2025/08/termalni_lazne.webp" alt="Termální lázně logo" loading="lazy">
           <div class="review-card">
-            <img class="q q-top" src="https://radkatesikova.cz/wp-content/uploads/2025/07/uvozovky-hnede.png" alt="">
+            <span class="q q-top" aria-hidden="true">„</span>
             <p>Večer v Lázeňském hotelu Eliška v Lázních Velké Losiny, byl výjimečný nejen díky skvělému jídlu a příjemné atmosféře, ale i díky živé hudbě, která celému zážitku dodala elegantní a uklidňující rozměr.</p>
             <p>Pianistka Radka Těšíková předvedla vyvážený repertoár, který zahrnoval jak klasické skladby, tak moderní melodie v jemných úpravách. Hudba byla decentní, nerušila konverzaci u stolu, ale zároveň dokázala zaujmout každého, kdo si chtěl poslech vychutnat naplno.</p>
             <p>Interpretace byla citlivá a profesionální. Bylo znát, že hudebník má s vystupováním v takovém prostředí bohaté zkušenosti – dokázala se skvěle přizpůsobit náladě večera i hostům.</p>
             <p>Celkově hra na klavír výrazně přispěla k pohodové atmosféře a udělala z obyčejné večeře výjimečný kulturní zážitek. Takovéto spojení gastronomie a hudby rozhodně vítám a doporučuji všem, kdo si chtějí večer skutečně užít.</p>
             <p class="name">Tomáš Mikulec, provozní</p>
-            <img class="q q-bottom" src="https://radkatesikova.cz/wp-content/uploads/2025/07/uvozovky-hnede.png" alt="">
+            <span class="q q-bottom" aria-hidden="true">“</span>
           </div>
         </div></div>
 
         <div class="carousel-slide"><div class="review">
           <img class="avatar" src="https://radkatesikova.cz/wp-content/uploads/2025/08/dohnalovi-1.webp" alt="Dohnalovi" loading="lazy">
           <div class="review-card">
-            <img class="q q-top" src="https://radkatesikova.cz/wp-content/uploads/2025/07/uvozovky-hnede.png" alt="">
+            <span class="q q-top" aria-hidden="true">„</span>
             <p>Náš kouzelný obřad dokreslila živá hudba k naprosté dokonalosti. Velice děkujeme za příjemný a vstřícný přístup, perfektní komunikaci a dokonalé provedení. Ze srdce a s čistým přesvědčením doporučujeme!</p>
             <p class="name">Velké díky, Dohnalovi</p>
-            <img class="q q-bottom" src="https://radkatesikova.cz/wp-content/uploads/2025/07/uvozovky-hnede.png" alt="">
+            <span class="q q-bottom" aria-hidden="true">“</span>
           </div>
         </div></div>
 
@@ -319,6 +331,7 @@
       <a href="https://www.instagram.com/radus_tesikova/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg></a>
       <a href="https://www.youtube.com/@radkatesikova1398/featured" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"/></svg></a>
     </div>
+    <a class="footer-logo" href="#hero" aria-label="Radka Těšíková – na začátek stránky"><img src="rt-logo-negativ.svg" alt="Radka Těšíková" width="220" height="150"></a>
     <div class="copy">© <span id="year">2026</span> Radka Těšíková</div>
   </div>
 </footer>
