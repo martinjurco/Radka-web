@@ -41,14 +41,14 @@ a{color:inherit;text-decoration:none}
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;background:url("hero.webp") 30% center/cover no-repeat;padding:10px}
 .hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,61,46,0) 34%,rgba(0,61,46,.86) 54%,rgba(0,61,46,.94) 100%)}
 .hero-content{position:relative;z-index:1;width:100%;max-width:1300px;margin:0 auto;display:flex;justify-content:flex-end;padding-right:40px}
-.hero-content .inner{width:50%;max-width:590px}
+.hero-content .inner{width:420px;max-width:46%;text-align:center}
 .hero-logo{line-height:0}
-.hero-logo img{display:block;width:100%;max-width:420px;min-width:200px;height:auto}
+.hero-logo img{display:block;width:100%;max-width:420px;min-width:200px;height:auto;margin:0 auto}
 .hero h1.hero-logo{margin:0 0 58px;padding-top:20px}
-.hero h2{font-size:23px;font-weight:300;line-height:1.5;color:var(--text);max-width:420px;text-align:center;margin-top:0}
-.hero p{font-size:23px;font-weight:300;line-height:1.5;color:var(--text);margin-top:30px;padding-left:7px}
+.hero h2{font-size:23px;font-weight:300;line-height:1.5;color:var(--text);text-align:center;margin-top:0}
+.hero p{font-size:23px;font-weight:300;line-height:1.5;color:var(--text);margin-top:30px;text-align:center}
 .hero p+p{margin-top:14px}
-.hero .btn-wrap{margin-top:34px;padding-left:7px}
+.hero .btn-wrap{margin-top:34px;text-align:center}
 .btn-hero{display:inline-block;background:var(--peach);color:var(--primary);font-size:22px;font-weight:500;padding:10px 30px;border-radius:45px;transition:background .3s,transform .3s}
 .btn-hero:hover{background:var(--text);transform:translateY(-2px)}
 .hero-mobile{display:none;background:var(--primary);color:var(--text);text-align:center}
@@ -239,7 +239,7 @@ a{color:inherit;text-decoration:none}
 .footer-inner{max-width:var(--container);margin:0 auto;min-height:88px;padding:34px 0;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .site-footer .copy{font-size:14px}
 .footer-logo{display:block;line-height:0}
-.footer-logo img{width:220px;height:auto}
+.footer-logo img{width:200px;height:auto}
 
 /* ===== Kontakt ===== */
 .contact-page{background:var(--secondary);padding:80px 20px 100px;min-height:calc(100vh - 178px)}
@@ -293,7 +293,7 @@ a{color:inherit;text-decoration:none}
 /* ===== Tablet ===== */
 @media (max-width:1024px){
   .hero-content{padding-right:20px}
-  .hero-content .inner{width:44%}
+  .hero-content .inner{max-width:44%}
   .hero h2{font-size:21px}
   .hero p{font-size:20px}
   .hero{background-position:0% center}
@@ -354,6 +354,5 @@ a{color:inherit;text-decoration:none}
 @media (max-width:1320px){.strings-orn{display:none}}
 @media (max-width:767px){
   .contact-page h1{font-size:34px}
-  .footer-logo img{width:200px}
   .poems .q{font-size:110px}
 }
